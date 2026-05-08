@@ -3,27 +3,27 @@ from pathlib import Path
 
 base_path = Path(__file__).parent
 
-st.title("🎈 Madlen the Pink Elephant")
+st.title("🎈 Madlen and Nils Go for a Run")
 st.write(
-    "Welcome to a gentle story about Madlen, a bright pink elephant with a big heart."
+    "Welcome to a bright story about Madlen, the pink elephant who wants to go running with her friend Nils."
 )
 
 st.header("Meet Madlen")
 st.write(
-    "Madlen is a kind little elephant who loves to explore the meadow, share smiles, and paint the sky with her imagination. "
-    "Every day feels like a happy adventure when she is around."
+    "Madlen is excited for a run across the meadow with Nils. She is not worried about the Hafengeburtstag event later that day, "
+    "because she knows her friends will still be there when she joins them afterward."
 )
 
 pink_elephant = base_path / "pink_elephant_plot.png"
 if pink_elephant.exists():
-    st.image(str(pink_elephant), caption="Madlen the pink elephant.", use_column_width=True)
+    st.image(str(pink_elephant), caption="Madlen the pink elephant getting ready to run.", use_column_width=True)
 else:
     st.warning("Madlen picture not found. Generate `pink_elephant_plot.png` first.")
 
-st.header("A Rainbow Morning")
+st.header("A Sunny Run")
 st.write(
-    "One morning, Madlen wakes under cotton candy clouds and finds a rainbow stretching across the meadow. "
-    "She dances through the flowers, humming a happy tune as bright colors follow her path."
+    "One sunny morning, Madlen and Nils lace up their shoes and run through the meadow together. "
+    "They smile at the flowers and enjoy the breeze, knowing the Hafengeburtstag celebration will wait for them later."
 )
 
 meadow_image = base_path / "madlen_meadow.png"
@@ -32,16 +32,16 @@ if meadow_image.exists():
 else:
     st.warning("Meadow picture not found. Generate `madlen_meadow.png` first.")
 
-st.header("A Friend for Madlen")
+st.header("Friends Still Waiting")
 st.write(
-    "Madlen meets a little bird who chirps, ‘Let’s play together!’ They share stories and watch the sun sparkle. "
-    "With every smile, the world feels a little softer and brighter."
+    "After their run, Madlen and Nils head toward the Hafengeburtstag celebration. "
+    "They are happy knowing their friends will still be there when they arrive, ready to share music, laughter, and treats."
 )
 
 friend_image = base_path / "madlen_friend.png"
 if friend_image.exists():
-    st.image(str(friend_image), caption="Madlen and her bird friend.", use_column_width=True)
+    st.image(str(friend_image), caption="Madlen and Nils joining their friends later.", use_column_width=True)
 else:
     st.warning("Friend picture not found. Generate `madlen_friend.png` first.")
 
-st.write("**The end.** Thank you for visiting Madlen on her happy day!")
+st.write("**The end.** Thank you for visiting Madlen and Nils on their joyful run!")
