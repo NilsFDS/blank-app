@@ -10,13 +10,13 @@ st.write(
 
 st.header("Meet Madlen")
 st.write(
-    "Madlen is excited for a run across the meadow with Nils. She is not worried about the Hafengeburtstag event later that day, "
+    "Madlen is excited for a run across the meadow with Nils, her blue giraffe friend. She is not worried about the Hafengeburtstag event later that day, "
     "because she knows her friends will still be there when she joins them afterward."
 )
 
 pink_elephant = base_path / "pink_elephant_plot.png"
 if pink_elephant.exists():
-    st.image(str(pink_elephant), caption="Madlen the pink elephant getting ready to run.", use_column_width=True)
+    st.image(str(pink_elephant), caption="Madlen and Nils getting ready for their run.", use_column_width=True)
 else:
     st.warning("Madlen picture not found. Generate `pink_elephant_plot.png` first.")
 
@@ -28,7 +28,7 @@ st.write(
 
 meadow_image = base_path / "madlen_meadow.png"
 if meadow_image.exists():
-    st.image(str(meadow_image), caption="Madlen dances under a rainbow.", use_column_width=True)
+    st.image(str(meadow_image), caption="Madlen and Nils running together under a rainbow.", use_column_width=True)
 else:
     st.warning("Meadow picture not found. Generate `madlen_meadow.png` first.")
 
@@ -40,7 +40,7 @@ st.write(
 
 friend_image = base_path / "madlen_friend.png"
 if friend_image.exists():
-    st.image(str(friend_image), caption="Madlen and Nils joining their friends later.", use_column_width=True)
+    st.image(str(friend_image), caption="Madlen and Nils arriving at Hafengeburtstag together.", use_column_width=True)
 else:
     st.warning("Friend picture not found. Generate `madlen_friend.png` first.")
 
